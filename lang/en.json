@@ -1,0 +1,81 @@
+{
+  "LIVEAUDIO": {
+    "Panel": {
+      "Title": "Live Audio Relay",
+      "Live": "Live — streaming to players",
+      "Off": "Not streaming",
+      "Monitor": "Hear the mix",
+      "MonitorOn": "Play the mix on your speakers, exactly as players hear it",
+      "MonitorOff": "Stop playing the mix on your speakers",
+      "HintMonitor": "You're hearing the mix. Mute the shared tabs in your browser so you don't hear them twice; the stream keeps their sound.",
+      "Mix": "Sources",
+      "NoSources": "Add a source below, then go live.",
+      "SilentLive": "No sources: players are hearing silence. Add a source to continue.",
+      "AddSource": "Add a source",
+      "SourceDisplay": "Browser tab (pick it after pressing Add)",
+      "UnnamedDevice": "Audio input {n}",
+      "Add": "Add",
+      "Refresh": "Refresh devices and show their names",
+      "Volume": "Volume",
+      "Mute": "Mute",
+      "Unmute": "Unmute",
+      "Remove": "Remove from the mix",
+      "SurfaceTab": "Browser tab",
+      "SurfaceWindow": "Window",
+      "SurfaceScreen": "Screen",
+      "SurfaceShared": "Shared audio",
+      "HintDisplay": "Press Add and your browser opens its share popup. Choose the Tab list, pick the tab playing music, and keep \"Also share tab audio\" on. The tab must be in this same browser and profile, not a private window. On Windows you can instead pick Entire Screen and tick \"Share system audio\".",
+      "HintDevice": "Route your music app into this device (for example BlackHole on macOS or VB-Cable on Windows). Don't route your microphone into it, or players will hear you twice. To hear the app yourself too, send it to a Multi-Output Device that includes your speakers.",
+      "HintLabels": "Device names are hidden until you allow microphone access. Press the refresh button to show them.",
+      "Listeners": "Listeners",
+      "NoListeners": "Nobody is connected yet.",
+      "Start": "Go Live",
+      "Stop": "Stop",
+      "WarnApp": "Foundry's desktop app can't share tabs. Open Foundry in Chrome, Edge or Vivaldi (with the desktop app still running, go to http://localhost:30000) and play your music in another tab there, or add an audio device such as BlackHole instead.",
+      "WarnBrowser": "This browser can't share tab audio. Open Foundry in Chrome, Edge or Vivaldi and play your music in another tab there, or add an audio device such as BlackHole instead."
+    },
+    "State": {
+      "new": "starting",
+      "connecting": "connecting",
+      "connected": "connected",
+      "disconnected": "reconnecting",
+      "failed": "failed",
+      "closed": "closed"
+    },
+    "Controls": {
+      "Listen": "Listen to the GM's live audio"
+    },
+    "Notify": {
+      "Replaced": "{name} started streaming, so your stream was stopped."
+    },
+    "Settings": {
+      "Listen": {
+        "Name": "Listen to live audio",
+        "Hint": "Play audio the GM streams with Live Audio Relay on this computer."
+      },
+      "Volume": {
+        "Name": "Live audio volume",
+        "Hint": "Volume of the GM's stream on this computer. It is also scaled by Foundry's Music volume."
+      },
+      "Bitrate": {
+        "Name": "Stream quality",
+        "Hint": "Bitrate the GM sends to each player. Higher sounds better but uses more of the GM's upload."
+      },
+      "IceServers": {
+        "Name": "ICE servers (JSON)",
+        "Hint": "STUN/TURN servers used to connect players, as a JSON array of RTCIceServer objects. Add a TURN server if some players can never connect."
+      }
+    },
+    "Error": {
+      "Insecure": "Audio capture needs a secure connection. Open Foundry over https or at localhost.",
+      "NoDisplayCapture": "Foundry's desktop app can't share tabs. Open Foundry in Chrome, Edge or Vivaldi, or add an audio device instead.",
+      "NoAudio": "That share had no audio. Share a browser tab with \"Also share tab audio\" turned on; on macOS, whole screens and windows don't include sound.",
+      "Start": "Couldn't start streaming: {message}",
+      "Devices": "Couldn't list audio devices: {message}",
+      "ConnectFailed": "Couldn't connect to the GM's live audio. Your network may need a TURN server; ask your GM.",
+      "IceServers": "The ICE servers setting isn't a valid JSON array; using the default servers.",
+      "Add": "Couldn't add that source: {message}",
+      "NoTabAudio": "This browser can't share tab audio. Open Foundry in Chrome, Edge or Vivaldi, or add an audio device instead."
+    }
+  }
+}

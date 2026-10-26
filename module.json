@@ -1,0 +1,20 @@
+{
+  "id": "live-audio-relay",
+  "title": "Live Audio Relay",
+  "description": "Stream live audio from the GM's computer (a browser tab, system audio, or any audio input) to every player at the table.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "esmodules": ["scripts/main.js"],
+  "styles": ["styles/live-audio.css"],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": true
+}
